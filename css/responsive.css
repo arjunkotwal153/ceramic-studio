@@ -115,7 +115,7 @@
 
             .submit {
                 padding: 13px;
-                font-size: 13px
+                font-size: clamp(12.0px, 1.30vw + 0.5rem, 13.0px)
             }
 
             .field-row {
@@ -163,3 +163,10 @@
                 transform: rotateX(54deg) translateZ(0)
             }
         }
+@media(max-width:768px) {
+    nav { padding: 12px 20px; }
+    .hero-fg { padding: 0 16px 40px; }
+    .hero { justify-content: center; }
+    .hero-stats { gap: 20px; }
+    .cta-row { gap: 10px; }
+}
