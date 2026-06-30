@@ -1,0 +1,185 @@
+.reveal {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity .8s, transform .8s
+        }
+
+.reveal.in {
+            opacity: 1;
+            transform: none
+        }
+
+@keyframes veil {
+            to {
+                opacity: 0;
+                visibility: hidden
+            }
+        }
+
+@keyframes carReveal {
+            from {
+                opacity: 0;
+                filter: brightness(.12) contrast(1.1);
+                transform: scale(1.06)
+            }
+
+            to {
+                opacity: 1;
+                filter: brightness(1);
+                transform: scale(1)
+            }
+        }
+
+@keyframes lampOn {
+            0% {
+                opacity: 0
+            }
+
+            40% {
+                opacity: .85
+            }
+
+            52% {
+                opacity: .3
+            }
+
+            68% {
+                opacity: 1
+            }
+
+            100% {
+                opacity: .92
+            }
+        }
+
+@keyframes cineShine {
+            0% {
+                left: -40%
+            }
+
+            40% {
+                left: 120%
+            }
+
+            100% {
+                left: 120%
+            }
+        }
+
+@keyframes ghostIn {
+            to {
+                opacity: 1
+            }
+        }
+
+@keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(22px)
+            }
+
+            to {
+                opacity: 1;
+                transform: none
+            }
+        }
+
+@keyframes wheelSpin {
+            to {
+                transform: rotate(360deg)
+            }
+        }
+
+@keyframes scroll {
+            from {
+                transform: translateX(0)
+            }
+
+            to {
+                transform: translateX(-50%)
+            }
+        }
+
+@keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1
+            }
+
+            50% {
+                opacity: .35
+            }
+        }
+@keyframes pulse-wa {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+
+.map-marker {
+    width: 34px;
+    height: 34px;
+    background-color: var(--red);
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 0 10px rgba(232, 70, 42, 0.8);
+    opacity: 0; /* Hidden before flight ends */
+    transition: opacity 1s ease;
+}
+
+.map-marker.active {
+    opacity: 1;
+}
+
+.map-marker.active::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--red);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: markerPulse 2s infinite;
+}
+
+@keyframes markerPulse {
+    0% {
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+    }
+    100% {
+        width: 300%;
+        height: 300%;
+        opacity: 0;
+    }
+}
+
+@keyframes scroll-reviews {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+@keyframes alloyRotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@keyframes alloyGlintSweep {
+    0% { transform: translateX(-150%) skewX(-20deg); opacity: 0; }
+    30% { opacity: 1; }
+    100% { transform: translateX(150%) skewX(-20deg); opacity: 0; }
+}
+@keyframes scrollWheel {
+    0% { transform: translate(-50%, 0); opacity: 1; }
+    100% { transform: translate(-50%, 12px); opacity: 0; }
+}

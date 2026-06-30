@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceramic Studio — Premium Car Detailing &amp; Ceramic Coating, Ludhiana</title>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <!-- MapLibre GL JS -->
+    <link href="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.css" rel="stylesheet" />
+    <script src="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.js"></script>
+</head>
+
+<body>
+
+    <nav id="nav">
+        <div class="brand"><span class="mk"><span>C</span></span>Ceramic Studio</div>
+        <a href="#book" class="nav-cta">Book now</a>
+    </nav>
+
+    <!-- ============ CINEMATIC HERO ============ -->
+    <header class="hero">
+        <div class="ghost">Premium<br>Car Wash</div>
+        <div class="cine">
+            <img class="hero-bg" src="thar roxx.png" alt="Mahindra Thar Roxx Background">
+            <div class="cine-overlay"></div>
+        </div>
+        </div>
+        <div class="veil"></div>
+
+        <div class="hero-fg">
+            <div class="eyebrow">Premium Ceramic Studio · Ludhiana</div>
+            <h1 class="wordmark" id="heroWordmark">
+                <div class="l1"><span class="txt-anim c-1">CERAMIC</span></div>
+                <div class="l2">
+                    <span class="txt-anim c-2">STUDI</span>
+                    <div class="alloy-wrapper txt-anim c-3">
+                        <div class="alloy-counter-skew" id="heroAlloy">
+                            <canvas id="threeWheelCanvas"></canvas>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </div>
+        </h1>
+        <p class="tagline">Ceramic coating, paint correction and a mirror finish that <b>beads water like glass</b>.
+            Showroom shine — done right.</p>
+        <div class="cta-row">
+            <a href="#book" class="btn btn-primary">Book your detail
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg></a>
+            <a href="#pricing" class="btn btn-ghost">View packages</a>
+        </div>
+        <div class="hero-stats">
+            <div class="hs"><b><i>5.0</i>★</b><small>Google rated</small></div>
+            <div class="hs"><b><i>2+</i> yrs</b><small>Coating protection</small></div>
+            <div class="hs"><b><i>24</i> hr</b><small>Most jobs, same day</small></div>
+        </div>
+        </div>
+
+        <div class="scroll-indicator txt-anim c-4">
+            <div class="mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee">
+        <div class="marquee-track">
+            <span>Ceramic Coating</span><span>Paint Correction</span><span>Foam Wash</span><span>Interior
+                Detail</span><span>PPF</span><span>Headlight Restore</span>
+            <span>Ceramic Coating</span><span>Paint Correction</span><span>Foam Wash</span><span>Interior
+                Detail</span><span>PPF</span><span>Headlight Restore</span>
+        </div>
+    </div>
+
+    <!-- ============ INTRO + STATS ============ -->
+    <section>
+        <div class="intro-grid">
+            <div class="intro-copy reveal">
+                <div class="label">Revitalize your ride</div>
+                <h2 class="title">From dusty to <span class="rd">dazzling.</span></h2>
+                <p>Every car that rolls in gets the same obsession — multi-stage wash, machine polish and protection
+                    that actually lasts. Whether it's a daily Swift or a weekend Defender, it leaves looking better than
+                    the showroom floor.</p>
+            </div>
+            <div class="stat-block reveal">
+                <div class="cell"><b><i>500</i>+</b><small>Cars detailed in Ludhiana</small></div>
+                <div class="cell"><b><i>9</i>H</b><small>Ceramic hardness rating</small></div>
+                <div class="cell"><b><i>100</i>%</b><small>Doorstep pickup &amp; drop</small></div>
+                <div class="cell"><b><i>5.0</i>★</b><small>On every Google review</small></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="sec-white" id="services">
+        <div class="head-row">
+            <div class="reveal">
+                <div class="label">What we do</div>
+                <h2 class="title">Built for paint that <span class="out">deserves better</span></h2>
+            </div>
+            <p class="lead reveal">Six services, one standard. Pick what your car needs — or let us walk it through a
+                full detail.</p>
+        </div>
+        <div class="grid">
+            <div class="card reveal">
+                <div class="thumb"><img src="images/ceramic_coating.png" alt="Ceramic Coating" style="width: 100%; height: 100%; object-fit: cover;"></div>
+                <div class="body">
+                    <div class="num">01</div>
+                    <h3>Ceramic Coating</h3>
+                    <p>A liquid-glass layer that locks in gloss, repels water and shields paint for years.</p>
+                    <div class="price">From ₹8,000</div>
+                </div>
+            </div>
+            <div class="card reveal">
+                <div class="thumb"><img src="images/paint_correction.png" alt="Paint Correction" style="width: 100%; height: 100%; object-fit: cover;"></div>
+                <div class="body">
+                    <div class="num">02</div>
+                    <h3>Paint Correction</h3>
+                    <p>Swirls, scratches and water spots machine-polished out to a mirror reflection.</p>
+                    <div class="price">From ₹4,500</div>
+                </div>
+            </div>
+            <div class="card reveal">
+                <div class="thumb"><img src="images/interior_detailing.png" alt="Interior Detailing" style="width: 100%; height: 100%; object-fit: cover;"></div>
+                <div class="body">
+                    <div class="num">03</div>
+                    <h3>Interior Detailing</h3>
+                    <p>Seats, dash and vents deep-cleaned, sanitised and conditioned to factory-fresh.</p>
+                    <div class="price">From ₹2,500</div>
+                </div>
+            </div>
+            <div class="card reveal">
+                <div class="thumb"><img src="images/foam_wash.png" alt="Foam Wash & PPF" style="width: 100%; height: 100%; object-fit: cover;"></div>
+                <div class="body">
+                    <div class="num">04</div>
+                    <h3>Foam Wash &amp; PPF</h3>
+                    <p>Contactless snow-foam wash plus paint protection film for the safest finish in town.</p>
+                    <div class="price">From ₹1,200</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CERAMIC LAYERS ============ -->
+    <section class="ceramic" id="ceramic">
+        <div class="ceramic-grid">
+            <div class="ceramic-copy reveal">
+                <div class="label">The science of shine</div>
+                <h2 class="title">How ceramic <span class="rd">protects</span> your car</h2>
+                <p>Ceramic coating bonds to your clear coat as a near-invisible glass shield — adding hardness, deep
+                    gloss and hydrophobic protection that shrugs off dirt, UV and water spots long after a normal wax
+                    has worn away.</p>
+            </div>
+            <div class="layers" id="layers">
+                <div class="layers-inner">
+                    <div class="layer l1">Ceramic Coating</div>
+                    <div class="layer l2">Clear Coat</div>
+                    <div class="layer l3">Vehicle Paint</div>
+                    <div class="layer l4">Primer</div>
+                    <div class="layer l5">Metal Body</div>
+                </div>
+            </div>
+        </div>
+        <div class="benefits">
+            <div class="ben reveal"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.6">
+                    <path d="M12 2l2 5 5 1-4 4 1 6-4-3-4 3 1-6-4-4 5-1z" />
+                </svg>
+                <h4>Enhanced Gloss</h4><small>Deep, wet-look shine</small>
+            </div>
+            <div class="ben reveal"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.6">
+                    <path d="M12 3c3 4 5 6.5 5 9a5 5 0 0 1-10 0c0-2.5 2-5 5-9z" />
+                </svg>
+                <h4>Hydrophobic</h4><small>Water beads &amp; rolls off</small>
+            </div>
+            <div class="ben reveal"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.6">
+                    <circle cx="12" cy="12" r="4" />
+                    <path d="M12 2v3M12 19v3M2 12h3M19 12h3" />
+                </svg>
+                <h4>Anti-Fade</h4><small>UV &amp; discolour shield</small>
+            </div>
+            <div class="ben reveal"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.6">
+                    <path d="M12 3l7 3v6c0 5-3 7-7 9-4-2-7-4-7-9V6l7-3z" />
+                </svg>
+                <h4>Protects Paint</h4><small>Grime &amp; fallout proof</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PRICING ============ -->
+    <section id="pricing">
+        <div class="reveal" style="text-align:center;max-width:680px;margin:0 auto">
+            <div class="label">Packages</div>
+            <h2 class="title" style="margin:0 auto">Pick your <span class="rd">finish</span></h2>
+        </div>
+        <div class="price-grid">
+            <div class="tier reveal">
+                <h3>Express Shine</h3>
+                <div class="amt">₹1,499</div>
+                <ul>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                            <path d="M5 12l5 5L20 7" />
+                        </svg>Snow-foam contactless wash</li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                            <path d="M5 12l5 5L20 7" />
+                        </svg>Tyre &amp; rim dressing</li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                            <path d="M5 12l5 5L20 7" />
+                        </svg>Interior vacuum &amp; wipe-down</li>
+                </ul><a href="#book">Book Express</a>
+            </div>
+            <div class="tier feat reveal"><span class="badge">Most popular</span>
+                <h3>Premium Detail</h3>
+                <div class="amt">₹4,999</div>
+                <ul>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                            <path d="M5 12l5 5L20 7" />
+                        </svg>Everything in Express Shine</li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                            <path d="M5 12l5 5L20 7" />
+                        </svg>Single-stage paint correction</li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                            <path d="M5 12l5 5L20 7" />
+                        </svg>Deep interior detailing</li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                            <path d="M5 12l5 5L20 7" />
+                        </svg>6-month wax protection</li>
+                </ul><a href="#book">Book Premium</a>
+            </div>
+            <div class="tier reveal">
+                <h3>Ceramic Ultimate</h3>
+                <div class="amt">₹14,999</div>
+                <ul>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                            <path d="M5 12l5 5L20 7" />
+                        </svg>Everything in Premium Detail</li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                            <path d="M5 12l5 5L20 7" />
+                        </svg>Multi-stage paint correction</li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                            <path d="M5 12l5 5L20 7" />
+                        </svg>9H ceramic coating, 2+ yrs</li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                            <path d="M5 12l5 5L20 7" />
+                        </svg>Free maintenance wash x2</li>
+                </ul><a href="#book">Book Ultimate</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ TESTIMONIALS (LOOPING) ============ -->
+    <section class="sec-white testi-marquee-sec" id="reviews">
+        <div class="testi-header">
+            <div class="gbadge">Rated <b>5.0</b> ★ on Google · Ludhiana</div>
+        </div>
+        <div class="testi-marquee">
+            <div class="testi-track">
+                <!-- Group 1 -->
+                <div class="testi-track-inner">
+                    <div class="testi-card">
+                        <div class="stars">★★★★★</div>
+                        <p>“Picked up my car looking like it just left the showroom. The shine genuinely turned heads —
+                            worth every rupee.”</p>
+                        <div class="who">Chirag Naini<small>Verified Google review</small></div>
+                    </div>
+                    <div class="testi-card">
+                        <div class="stars">★★★★★</div>
+                        <p>“Incredible attention to detail. My thar series looks better than the day I bought it. The
+                            ceramic coating is flawless.”</p>
+                        <div class="who">Gurpreet Singh<small>Verified Google review</small></div>
+                    </div>
+                    <div class="testi-card">
+                        <div class="stars">★★★★★</div>
+                        <p>“Professional team and premium setup. The paint correction removed all swirl marks
+                            completely.”</p>
+                        <div class="who">Rohan Kapoor<small>Verified Google review</small></div>
+                    </div>
+                    <div class="testi-card">
+                        <div class="stars">★★★★★</div>
+                        <p>“Loved the interior detailing. My Defender smells fresh and the leather feels brand new.
+                            Highly recommended.”</p>
+                        <div class="who">Jasmeet Singh<small>Verified Google review</small></div>
+                    </div>
+                    <div class="testi-card">
+                        <div class="stars">★★★★★</div>
+                        <p>“The best detailing studio in Punjab, hands down. Customer service is top-notch and the
+                            results speak for themselves.”</p>
+                        <div class="who">Amit Sharma<small>Verified Google review</small></div>
+                    </div>
+                </div>
+                <!-- Group 2 (Duplicate for seamless loop) -->
+                <div class="testi-track-inner">
+                    <div class="testi-card">
+                        <div class="stars">★★★★★</div>
+                        <p>“Picked up my car looking like it just left the showroom. The shine genuinely turned heads —
+                            worth every rupee.”</p>
+                        <div class="who">Chirag Naini<small>Verified Google review</small></div>
+                    </div>
+                    <div class="testi-card">
+                        <div class="stars">★★★★★</div>
+                        <p>“Incredible attention to detail. My thar looks better than the day I bought it. The ceramic
+                            coating is flawless.”</p>
+                        <div class="who">Gurpreet Singh<small>Verified Google review</small></div>
+                    </div>
+                    <div class="testi-card">
+                        <div class="stars">★★★★★</div>
+                        <p>“Professional team and premium setup. The paint correction removed all swirl marks
+                            completely.”</p>
+                        <div class="who">Rohan Kapoor<small>Verified Google review</small></div>
+                    </div>
+                    <div class="testi-card">
+                        <div class="stars">★★★★★</div>
+                        <p>“Loved the interior detailing. My Defender smells fresh and the leather feels brand new.
+                            Highly recommended.”</p>
+                        <div class="who">Jasmeet Singh<small>Verified Google review</small></div>
+                    </div>
+                    <div class="testi-card">
+                        <div class="stars">★★★★★</div>
+                        <p>“The best detailing studio in Punjab, hands down. Customer service is top-notch and the
+                            results speak for themselves.”</p>
+                        <div class="who">Amit Sharma<small>Verified Google review</small></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ OUR STUDIO (graffiti wall) ============ -->
+    <section class="studio" id="studio-section">
+        <div class="map-container">
+            <div id="studio-map"></div>
+            <div class="map-fog-overlay"></div>
+        </div>
+        <div class="studio-card reveal">
+            <div class="label">Our Studio</div>
+            <h2>A Studio Built for Perfection.</h2>
+            <p>Roll up to our Ludhiana studio — where premium tools and climate control create the ultimate environment
+                your car has been
+                waiting for.</p>
+            <div class="addr"><b>CERAMIC STUDIO</b>200 Feet Rd, Phase 2, Duggri,<br>Urban Estate Dugri, Ludhiana, Punjab
+                141001</div>
+            <a class="dir" href="https://maps.app.goo.gl/4vXbQ9eAiLookemB9" target="_blank" rel="noopener">
+                Get directions
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 21s-7-6.5-7-11a7 7 0 0 1 14 0c0 4.5-7 11-7 11z" />
+                    <circle cx="12" cy="10" r="2.5" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- ============ BOOKING ============ -->
+    <section id="book">
+        <div class="book-wrap">
+            <div class="book-copy reveal">
+                <div class="label">Book in 30 seconds</div>
+                <h2 class="title">Tell us about <span class="rd">your car.</span></h2>
+                <p>Fill this in and it lands straight on our WhatsApp. We confirm your slot and pickup within minutes —
+                    no calls, no waiting.</p>
+                <div class="live"><span></span>Replies on WhatsApp, usually within 10 min</div>
+            </div>
+            <div class="form reveal">
+                <div class="field-row">
+                    <div class="field"><label for="name">Your name</label><input id="name" type="text"
+                            placeholder="e.g. Arjun Kotwal"></div>
+                    <div class="field"><label for="phone">Phone</label><input id="phone" type="tel"
+                            placeholder="e.g. +91 9876543210"></div>
+                </div>
+
+                <div class="field-row">
+                    <div class="field"><label for="brand">Car brand</label><input id="brand" type="text"
+                            placeholder="e.g. Mahindra"></div>
+                    <div class="field"><label for="model">Model</label><input id="model" type="text"
+                            placeholder="e.g. Thar"></div>
+                </div>
+                <div class="field"><label for="service">Service</label>
+                    <select id="service">
+                        <option>Express Shine</option>
+                        <option>Premium Detail</option>
+                        <option>Ceramic Ultimate</option>
+                        <option>Paint Correction</option>
+                        <option>Interior Detailing</option>
+                        <option>PPF</option>
+                        <option>Not sure — recommend for me</option>
+                    </select>
+                </div>
+                <div class="field-row">
+                    <div class="field"><label for="date">Preferred Date</label><input id="date" type="text"
+                            placeholder="e.g. Tomorrow or DD/MM/YYYY"></div>
+                    <div class="field"><label for="time">Preferred Time</label><input id="time" type="text"
+                            placeholder="e.g. Morning, 10:00 AM"></div>
+                </div>
+                <div class="field"><label for="notes">Additional Notes</label><input id="notes" type="text"
+                        placeholder="Any specific requests or instructions?"></div>
+                <button class="submit" id="submitBtn">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2Zm5.5 14.2c-.2.6-1.2 1.2-1.7 1.2-.4 0-1 .1-3.2-.8-2.7-1.1-4.4-3.9-4.5-4-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6c-.2.2-.3.4-.1.6.5.9 1.1 1.4 1.8 1.9.4.2.6.2.8-.1l.6-.7c.2-.2.4-.2.6-.1l1.9.9c.2.1.4.2.4.3.1.2.1.6 0 .9Z" />
+                    </svg>
+                    Send booking on WhatsApp</button>
+                <p class="form-note">Opens WhatsApp with your details pre-filled. You just hit send.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer>
+        <div class="foot-top">
+            <div>
+                <div class="foot-brand">CERAMIC <span class="rd">STUDIO</span></div>
+                <p style="color:#bcae9f;margin-top:12px;max-width:300px">Ludhiana's home for ceramic coating, paint
+                    correction and that just-detailed gloss.</p>
+            </div>
+            <div class="foot-addr"><span class="k">Studio</span>CERAMIC STUDIO,<br>200 Feet Rd, Phase 2,
+                Duggri,<br>Urban Estate Dugri, Ludhiana, Punjab 141001</div>
+            <div class="foot-addr"><span class="k">Reach us</span>Instagram: <a
+                    href="https://www.instagram.com/ceramic_studio.13?igsh=MWpqZXhzbWphMnJ4dQ==" target="_blank"
+                    rel="noopener" style="color:#fff;text-decoration:underline">@ceramic_studio.13</a><br>Phone: <span
+                    style="color:#7d7064">9888641543, 8968123457</span><br>Mon – Sun, 10 AM – 8 PM</div>
+        </div>
+        <div class="foot-bottom"><span>© 2026 CERAMIC STUDIO</span><span>Crafted in Ludhiana</span></div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+    <script src="js/whatsapp.js?v=3" defer></script>
+    <script src="js/map.js" defer></script>
+
+
+
+    <script type="module">
+        import * as THREE from 'three';
+        import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+
+        const canvas = document.getElementById('threeWheelCanvas');
+        const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
+        renderer.setPixelRatio(window.devicePixelRatio);
+        renderer.toneMapping = THREE.ACESFilmicToneMapping;
+        renderer.toneMappingExposure = 1.7;
+
+        const updateSize = () => {
+            const width = canvas.parentElement.clientWidth || 100;
+            const height = canvas.parentElement.clientHeight || 100;
+            renderer.setSize(width, height, false);
+            camera.aspect = width / height;
+            camera.updateProjectionMatrix();
+        };
+        const resizeObs = new ResizeObserver(() => updateSize());
+        resizeObs.observe(canvas.parentElement);
+
+
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 100);
+        camera.position.z = 4.2;
+
+        const pmremGenerator = new THREE.PMREMGenerator(renderer);
+        scene.environment = pmremGenerator.fromScene(new RoomEnvironment(), 0.04).texture;
+
+        // Materials
+        const glossBlack = new THREE.MeshStandardMaterial({
+            color: 0xffffff,
+            metalness: 0.9,
+            roughness: 0.15,
+        });
+        const chrome = new THREE.MeshStandardMaterial({
+            color: 0xffffff,
+            metalness: 0.9,
+            roughness: 0.1,
+        });
+        const matteBlack = new THREE.MeshStandardMaterial({
+            color: 0x0a0a0a,
+            metalness: 0.8,
+            roughness: 0.8,
+        });
+
+        const wheelGroup = new THREE.Group();
+        const rimGroup = new THREE.Group(); // Inner group for rotation
+
+        // --- 1. Procedural Barrel (LatheGeometry) ---
+        const points = [];
+        // Define the cross-section profile of a deep concave rim
+        points.push(new THREE.Vector2(1.2, 0.8));   // Inner lip
+        points.push(new THREE.Vector2(1.3, 0.8));
+        points.push(new THREE.Vector2(1.6, 0.75));  // Barrel flat
+        points.push(new THREE.Vector2(1.6, -0.4));  // Drop center
+        points.push(new THREE.Vector2(1.7, -0.5));
+        points.push(new THREE.Vector2(1.7, -0.7));  // Front face mount area
+        points.push(new THREE.Vector2(1.85, -0.8)); // Front outer lip
+        points.push(new THREE.Vector2(1.9, -0.85)); // Front edge
+        points.push(new THREE.Vector2(1.85, -0.9));
+        points.push(new THREE.Vector2(1.75, -0.9));
+        // Thicken it by mirroring back
+        points.push(new THREE.Vector2(1.65, -0.75));
+        points.push(new THREE.Vector2(1.5, -0.5));
+        points.push(new THREE.Vector2(1.5, 0.7));
+        points.push(new THREE.Vector2(1.15, 0.75));
+        points.push(new THREE.Vector2(1.15, 0.8));
+
+        const latheGeo = new THREE.LatheGeometry(points, 64);
+        const barrel = new THREE.Mesh(latheGeo, glossBlack);
+        barrel.rotation.x = Math.PI / 2; // Orient to face the camera
+        rimGroup.add(barrel);
+
+        // --- 2. Concave Spokes ---
+        const numSpokes = 7;
+        // We'll create a shape and extrude it
+        const spokeShape = new THREE.Shape();
+        spokeShape.moveTo(-0.12, 0); // Bottom width (hub)
+        spokeShape.lineTo(-0.06, 1.7); // Top width (rim)
+        spokeShape.absarc(0, 1.75, 0.06, Math.PI, 0, true); // rounded top
+        spokeShape.lineTo(0.12, 0);
+        spokeShape.lineTo(-0.12, 0);
+
+        const extrudeSettings = {
+            steps: 2,
+            depth: 0.25, // thickness of spoke
+            bevelEnabled: true,
+            bevelThickness: 0.03,
+            bevelSize: 0.02,
+            bevelSegments: 3
+        };
+
+        const spokeGeo = new THREE.ExtrudeGeometry(spokeShape, extrudeSettings);
+        // Center the extrusion on Z
+        spokeGeo.translate(0, 0, -0.125);
+
+        // The spoke needs to curve inward (concave)
+        // We can apply a position modifier or just tilt them
+        for (let i = 0; i < numSpokes; i++) {
+            const spoke = new THREE.Mesh(spokeGeo, glossBlack);
+            const angle = (Math.PI * 2 / numSpokes) * i;
+
+            const spokeWrapper = new THREE.Group();
+            // Tilt the spoke to create the concave dish effect
+            spoke.rotation.x = -0.25;
+            spoke.position.z = 0.55; // Push out to meet the lip
+            spoke.position.y = 0.2; // Move slightly out from absolute center
+
+            spokeWrapper.rotation.z = angle;
+            spokeWrapper.add(spoke);
+            rimGroup.add(spokeWrapper);
+        }
+
+        // --- 3. Center Hub ---
+        const hubGeo = new THREE.CylinderGeometry(0.35, 0.45, 0.3, 32);
+        const hub = new THREE.Mesh(hubGeo, glossBlack);
+        hub.rotation.x = Math.PI / 2;
+        hub.position.z = 0.2; // Push back for deep concave
+        rimGroup.add(hub);
+
+        // Center Cap (Logo area)
+        const capGeo = new THREE.CylinderGeometry(0.15, 0.15, 0.32, 32);
+        const cap = new THREE.Mesh(capGeo, matteBlack);
+        cap.rotation.x = Math.PI / 2;
+        cap.position.z = 0.2;
+        rimGroup.add(cap);
+
+        // --- 4. Lug Nuts ---
+        const lugGeo = new THREE.CylinderGeometry(0.04, 0.04, 0.15, 6); // Hexagonal lugs
+        for (let i = 0; i < 5; i++) { // 5-lug pattern
+            const lug = new THREE.Mesh(lugGeo, chrome);
+            const angle = (Math.PI * 2 / 5) * i;
+            const radius = 0.23;
+            lug.position.x = Math.cos(angle) * radius;
+            lug.position.y = Math.sin(angle) * radius;
+            lug.position.z = 0.28;
+            lug.rotation.x = Math.PI / 2;
+            lug.rotation.y = angle; // Align hexagon
+            rimGroup.add(lug);
+        }
+
+        // Group hierarchy: 
+        // wheelGroup (handles Parallax Tilt) -> rimGroup (handles infinite rotation)
+        wheelGroup.add(rimGroup);
+        scene.add(wheelGroup);
+
+        // --- Lighting for Glint Sweep ---
+        const sweepLight = new THREE.SpotLight(0xffffff, 0);
+        sweepLight.position.set(-6, 6, 6);
+        sweepLight.angle = 0.15;
+        sweepLight.penumbra = 0.8;
+        scene.add(sweepLight);
+
+        // Also add a subtle rim light
+        const ambientLight = new THREE.AmbientLight(0xffffff, 1.5);
+        scene.add(ambientLight);
+        const fillLight = new THREE.DirectionalLight(0xffffff, 2.0);
+        fillLight.position.set(-2, 4, 5);
+        scene.add(fillLight);
+        const rimLight = new THREE.PointLight(0xffffff, 50);
+        rimLight.position.set(3, -3, 2);
+        scene.add(rimLight);
+
+
+        // --- Parallax Tilt Logic ---
+        let targetTiltX = 0;
+        let targetTiltY = 0;
+        let isHoverDevice = window.matchMedia("(hover: hover)").matches;
+
+        if (isHoverDevice) {
+            document.addEventListener('mousemove', (e) => {
+                // Map mouse position to -1 -> 1
+                const mouseX = (e.clientX / window.innerWidth) * 2 - 1;
+                const mouseY = -(e.clientY / window.innerHeight) * 2 + 1;
+
+                const maxTilt = Math.PI / 36; // 5 degrees
+                targetTiltX = mouseY * maxTilt;
+                targetTiltY = mouseX * maxTilt;
+            });
+        }
+
+        // --- Animation Loop ---
+        const clock = new THREE.Clock();
+        let glintTimer = 0;
+        const GLINT_INTERVAL = 6.0;
+
+        function animate() {
+            requestAnimationFrame(animate);
+            const delta = clock.getDelta();
+
+            // 1. Infinite Spin (1 revolution per 10s)
+            const rotationSpeed = (Math.PI * 2) / 10;
+            rimGroup.rotation.z -= rotationSpeed * delta;
+
+            // 2. Parallax Tilt (Lerp towards target)
+            if (isHoverDevice) {
+                wheelGroup.rotation.x += (targetTiltX - wheelGroup.rotation.x) * 5 * delta;
+                wheelGroup.rotation.y += (targetTiltY - wheelGroup.rotation.y) * 5 * delta;
+            }
+
+            // 3. Glint Sweep
+            const heroFg = document.querySelector('.hero-fg');
+            if (!heroFg || heroFg.classList.contains('is-active')) {
+                glintTimer += delta;
+                if (glintTimer > GLINT_INTERVAL) {
+                    const sweepProgress = glintTimer - GLINT_INTERVAL;
+                    if (sweepProgress < 1.5) {
+                        sweepLight.intensity = Math.sin((sweepProgress / 1.5) * Math.PI) * 100;
+                        sweepLight.position.x = -6 + (sweepProgress / 1.5) * 12;
+                        sweepLight.lookAt(rimGroup.position);
+                    } else {
+                        sweepLight.intensity = 0;
+                        glintTimer = 0;
+                    }
+                }
+            }
+
+            renderer.render(scene, camera);
+        }
+
+        window.addEventListener('resize', updateSize);
+        updateSize();
+        animate();
+
+    </script>
+</body>
+
+
+</html>
