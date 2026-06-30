@@ -166,7 +166,40 @@
 @media(max-width:768px) {
     nav { padding: 12px 20px; }
     .hero-fg { padding: 0 16px 40px; }
-    .hero { justify-content: center; }
     .hero-stats { gap: 20px; }
     .cta-row { gap: 10px; }
+}
+
+@media(max-width: 414px) {
+    .eyebrow {
+        font-size: 8.5px;
+        letter-spacing: 0.15em;
+        gap: 8px;
+    }
+    .eyebrow::before, .eyebrow::after {
+        width: 15px;
+    }
+    nav {
+        padding: 12px 10px;
+    }
+    .brand {
+        font-size: 11px;
+        letter-spacing: 0.1em;
+        gap: 6px;
+    }
+    .brand .mk {
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
+    }
+    .nav-cta {
+        padding: 8px 12px;
+        font-size: 10px;
+    }
+    .hero-stats {
+        gap: 10px;
+    }
+    .hs {
+        font-size: 10px;
+    }
 }

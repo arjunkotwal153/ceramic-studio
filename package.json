@@ -4,5 +4,8 @@
   "description": "Ceramic Studio Landing Page",
   "scripts": {
     "start": "npx http-server -p 8080 -c-1"
+  },
+  "dependencies": {
+    "puppeteer": "^25.2.1"
   }
 }
