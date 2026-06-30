@@ -1,0 +1,8 @@
+{
+  "name": "ceramic-studio",
+  "version": "1.0.0",
+  "description": "Ceramic Studio Landing Page",
+  "scripts": {
+    "start": "npx http-server -p 8080 -c-1"
+  }
+}
