@@ -1,6 +1,6 @@
 # CERAMIC STUDIO - Premium Luxury Car Detailing Website
 
-![Ceramic Studio Preview](images/ceramic_coating.png)
+![Ceramic Studio Preview](images/hero_screenshot.png)
 
 A high-end, professionally developed, responsive landing page designed for luxury car detailing, ceramic coating, and paint correction studios. 
 
