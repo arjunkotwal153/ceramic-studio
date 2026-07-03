@@ -16,7 +16,7 @@
             --body: 'Archivo', system-ui, sans-serif;
         }
 
-* {
+*, *::before, *::after {
             margin: 0;
             padding: 0;
             box-sizing: border-box
@@ -409,7 +409,9 @@ nav.scrolled .brand {
             background: var(--char);
             overflow: hidden;
             white-space: nowrap;
-            padding: 16px 0
+            padding: 16px 0;
+            width: 100%;
+            position: relative;
         }
 
 .marquee-track {
@@ -1322,6 +1324,8 @@ footer {
 .testi-marquee-sec {
     padding: clamp(60px, 10vh, 100px) 0;
     overflow: hidden;
+    width: 100%;
+    position: relative;
 }
 .testi-header {
     text-align: center;

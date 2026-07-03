@@ -1,4 +1,4 @@
-const OWNER_WHATSAPP = "919878955173";
+const OWNER_WHATSAPP = "918427278777";
 
 document.addEventListener('DOMContentLoaded', () => {
     const submitBtn = document.getElementById('submitBtn');
@@ -76,13 +76,13 @@ document.addEventListener('DOMContentLoaded', () => {
         submitBtn.style.cursor = 'not-allowed';
         submitBtn.innerHTML = 'Preparing WhatsApp...';
 
-        const msg = `🚗 *NEW BOOKING REQUEST*\n\n👤 Name:\n${data.name}\n\n📞 Phone:\n${data.phone}\n\n🚘 Car Brand:\n${data.brand}\n\n🚙 Model:\n${data.model}\n\n✨ Service:\n${data.service}\n\n📅 Preferred Date:\n${data.date}\n\n🕒 Preferred Time:\n${data.time}\n\n📝 Additional Notes:\n${data.notes}\n\n--------------------------------\n\nBooking submitted from the CERAMIC STUDIO website.`;
+        const msg = `🚗 *NEW BOOKING REQUEST*\n\n👤 Name:\n${data.name}\n\n📞 Phone:\n${data.phone}\n\n🚘 Car Brand:\n${data.brand}\n\n🚙 Model:\n${data.model}\n\n✨ Service:\n${data.service}\n\n📅 Preferred Date:\n${data.date}\n\n🕒 Preferred Time:\n${data.time}\n\n📝 Additional Notes:\n${data.notes}\n\n--------------------------------\n\nBooking submitted from the AUTOHEAD DETAILING website.`;
 
         setTimeout(() => {
             const phoneNumber = OWNER_WHATSAPP.replace(/\D/g, ''); // Ensure only digits
             
             // Use the universal WhatsApp API endpoint which avoids the wa.me deeplink 404 bug
-            const targetUrl = `https://api.whatsapp.com/send/?phone=${phoneNumber}&text=${encodeURIComponent(msg)}`;
+            const targetUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(msg)}`;
                 
             window.open(targetUrl, '_blank');
             submitBtn.disabled = false;

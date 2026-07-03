@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const STUDIO_COORDS = [75.8316382, 30.86562];
+    const STUDIO_COORDS = [75.829272, 30.8918842];
     
     // Smooth bezier-like curve points leading to the studio for the glowing route
     const FULL_ROUTE_COORDS = [
-        [75.8200, 30.8500],
-        [75.8250, 30.8550],
-        [75.8280, 30.8600],
-        [75.8300, 30.8630],
+        [75.8180, 30.8750],
+        [75.8220, 30.8800],
+        [75.8250, 30.8850],
+        [75.8270, 30.8880],
         STUDIO_COORDS
     ];
 
