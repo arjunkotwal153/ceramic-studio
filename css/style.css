@@ -265,10 +265,6 @@ nav.scrolled .brand {
 
 .wordmark .l1 {
             font-size: clamp(3.2rem, 15vw, 7.4rem);
-            background: linear-gradient(180deg, #fff, #e2e2e4 45%, #9a9aa0 56%, #f2f2f4);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent
         }
 
 .wordmark .l2 {
