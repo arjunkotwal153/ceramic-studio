@@ -64,7 +64,30 @@
             }
             
             .hero-bg {
-                object-position: 70% center !important; /* shift background image right */
+                object-fit: cover !important;
+                object-position: center 60% !important;
+                min-width: 100%;
+                min-height: 100%;
+            }
+
+            .hero {
+                min-height: 95vh;
+            }
+
+            .start-engine-btn {
+                width: auto;
+                padding: 14px 20px;
+                font-size: 0.98rem;
+                max-width: 100%;
+            }
+
+            .cine::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.65));
+                z-index: 1;
+                pointer-events: none;
             }
 
             /* old ::before */
@@ -171,6 +194,9 @@
 }
 
 @media(max-width: 414px) {
+    html, body {
+        overflow-x: hidden;
+    }
     .eyebrow {
         font-size: 8.5px;
         letter-spacing: 0.15em;
@@ -180,12 +206,19 @@
         width: 15px;
     }
     nav {
-        padding: 12px 10px;
+        padding: 12px 12px;
+        min-width: 0;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-between;
     }
     .brand {
         font-size: 11px;
         letter-spacing: 0.1em;
         gap: 6px;
+        min-width: 0;
+        flex: 1 1 auto;
     }
     .brand .mk {
         width: 24px;
@@ -195,6 +228,15 @@
     .nav-cta {
         padding: 8px 12px;
         font-size: 10px;
+        min-width: auto;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+    .hero-fg {
+        padding: 0 14px 40px;
+    }
+    .start-engine-btn {
+        width: min(100%, 260px);
     }
     .hero-stats {
         gap: 10px;

@@ -23,7 +23,8 @@
         }
 
 html {
-            scroll-behavior: smooth
+            scroll-behavior: smooth;
+            overflow-x: hidden;
         }
 
 body {
@@ -31,7 +32,8 @@ body {
             color: var(--ink);
             font-family: var(--body);
             line-height: 1.6;
-            -webkit-font-smoothing: antialiased
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
         }
 
 a {
@@ -47,6 +49,9 @@ a {
 nav {
             position: fixed;
             inset: 0 0 auto 0;
+            width: 100%;
+            left: 0;
+            right: 0;
             z-index: 60;
             display: flex;
             align-items: center;
@@ -1433,8 +1438,36 @@ footer {
     z-index: 2;
     pointer-events: none;
 }
+.start-engine-btn {
+    background: linear-gradient(135deg, #e8462a, #c5371e);
+    color: #fff;
+    font-family: var(--display);
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 999px;
+    padding: 12px 22px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+    box-shadow: 0 14px 30px rgba(232, 70, 42, 0.25);
+    z-index: 4;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.start-engine-btn:hover {
+    transform: translateY(-1px);
+}
+.start-engine-btn:disabled {
+    opacity: 0.65;
+    cursor: default;
+    box-shadow: none;
+}
 .hero-fg {
-    z-index: 3;
+    z-index: 4;
 }
 .wordmark {
     animation: none !important; /* Override old static animation */

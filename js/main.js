@@ -21,6 +21,49 @@ document.addEventListener("DOMContentLoaded", () => {
     
     let hasTriggeredAnimations = false;
 
+    const engineAudio = new Audio('engine.mp3');
+    let enginePlayed = false;
+
+    engineAudio.preload = 'auto';
+    engineAudio.volume = 0.9;
+
+    const setEngineStartTime = () => {
+        try {
+            engineAudio.currentTime = 1;
+        } catch (error) {
+            engineAudio.addEventListener('loadedmetadata', () => {
+                engineAudio.currentTime = 1;
+            }, { once: true });
+        }
+    };
+
+    const playEngineSound = () => {
+        if (enginePlayed) return;
+        setEngineStartTime();
+
+        engineAudio.play().then(() => {
+            enginePlayed = true;
+        }).catch(() => {
+            const onFirstInteraction = () => {
+                setEngineStartTime();
+                engineAudio.play().then(() => {
+                    enginePlayed = true;
+                }).catch(() => {});
+            };
+            window.addEventListener('pointerdown', onFirstInteraction, { once: true });
+            window.addEventListener('touchstart', onFirstInteraction, { once: true });
+        });
+    };
+
+    const engineBtn = document.getElementById('engineBtn');
+    if (engineBtn) {
+        engineBtn.addEventListener('click', () => {
+            playEngineSound();
+            engineBtn.disabled = true;
+            engineBtn.textContent = 'Engine started';
+        });
+    }
+
     if (video) {
         // Ensure video is playing
         video.play().catch(e => {
