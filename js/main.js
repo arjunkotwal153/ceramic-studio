@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = "919XXXXXXXXX"; // <-- replace with their real number
+const WHATSAPP_NUMBER = "919876543210"; // demo WhatsApp number
 
         const nav = document.getElementById('nav');
         addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 40));

@@ -1,4 +1,4 @@
-const OWNER_WHATSAPP = "918427278777";
+const OWNER_WHATSAPP = "919876543210";
 
 document.addEventListener('DOMContentLoaded', () => {
     const submitBtn = document.getElementById('submitBtn');
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
         submitBtn.style.cursor = 'not-allowed';
         submitBtn.innerHTML = 'Preparing WhatsApp...';
 
-        const msg = `🚗 *NEW BOOKING REQUEST*\n\n👤 Name:\n${data.name}\n\n📞 Phone:\n${data.phone}\n\n🚘 Car Brand:\n${data.brand}\n\n🚙 Model:\n${data.model}\n\n✨ Service:\n${data.service}\n\n📅 Preferred Date:\n${data.date}\n\n🕒 Preferred Time:\n${data.time}\n\n📝 Additional Notes:\n${data.notes}\n\n--------------------------------\n\nBooking submitted from the AUTOHEAD DETAILING website.`;
+        const msg = `🚗 *NEW BOOKING REQUEST*\n\n👤 Name:\n${data.name}\n\n📞 Phone:\n${data.phone}\n\n🚘 Car Brand:\n${data.brand}\n\n🚙 Model:\n${data.model}\n\n✨ Service:\n${data.service}\n\n📅 Preferred Date:\n${data.date}\n\n🕒 Preferred Time:\n${data.time}\n\n📝 Additional Notes:\n${data.notes}\n\n--------------------------------\n\nBooking submitted from the PRO STUDIO website.`;
 
         setTimeout(() => {
             const phoneNumber = OWNER_WHATSAPP.replace(/\D/g, ''); // Ensure only digits
